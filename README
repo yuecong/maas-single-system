@@ -23,10 +23,10 @@ Example configuration file follows:
     username: admin
     password: admin
     email: admin@admin.com
-    source_key_url: http://keyserver.ubuntu.com:11371/pks/lookup?op=get&search=0x5CFF1EA993EE8CC5
+    source_key_id: 93EE8CC5
     source: ppa:maas-maintainers/experimental
     cluster_management: "2"
-    cluster_nic: br0 
+    cluster_nic: br0
     cluster_dns_zone: maas.test
     ip_range_high: 192.168.0.254
     ip_range_low: 192.168.0.200
