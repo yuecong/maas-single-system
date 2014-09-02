@@ -1,0 +1,56 @@
+options:
+  default-url-iface:
+    type: string
+    default: "eth0"
+    description: "Interface used to determine the IP Address for MAAS_DEFAULT_URL"
+  username:
+    type: string
+    default: "admin"
+    description: "Username of the MAAS Administrative user"
+  password:
+    type: string
+    default: "admin"
+    description: "Password of the MAAS Administrative user"
+  email:
+    type: string
+    default: "admin@local.local"
+    description: "E-mail of the MAAS Administrative user"
+  upstream-dns:
+    type: string
+    description: "IP of the upstream DNS server to use to forward DNS request"
+  source:
+    type: string
+    description: "Optional repository to add prior to installing packages."
+  source_key_id:
+    type: string
+    description: "Optional ID of key to add from keyserver.ubuntu.com."
+  cluster_management:
+    type: string
+    description: |
+      Whether the Cluster Controller should manage DNS/DHCP. Available Options
+      2 - To manage DNS/DHCP
+  cluster_nic:
+    type: string
+    default: eth0
+    description: |
+      Network Interface the Cluster Controller will use to manage DNS/DHCP
+  cluster_dns_zone:
+    type: string
+    description: |
+      DNS zone name for the machines that the Cluster Controller will be managed
+      by this Cluster Controller (e.g. maas.zone1)
+  ip_range_high:
+    type: string
+    description: Highest IP on the range of IP addresses to DHCP.
+  ip_range_low:
+    type: string
+    description: Lowest IP on the range of IP addresses to DHCP.
+  broadcast_ip:
+    type: string
+    description: Broadcast IP of the range of IP addresses to DHCP.
+  router_ip:
+    type: string
+    description: Gateway IP of the range of IP addresses to DHCP.
+  subnet_mask:
+    type: string
+    description: Subnet Mask.

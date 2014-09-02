@@ -1,0 +1,10 @@
+name: maas-single-system
+summary: MAAS deployed on a single system.
+maintainer: Jason Hobbs <jason.hobbs@canonical.com>
+description: |
+ Metal-As-A-Service (MAAS) is the defaul Ubuntu's provisioning service.
+ It allows you to deploy Ubuntu on different hardware and works in
+ conjuction with Juju to deploy workloads on top. This charm provides
+ a complete MAAS installation on a single node.
+categories:
+  - misc

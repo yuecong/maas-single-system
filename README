@@ -1,0 +1,35 @@
+Overview
+--------
+
+This charm provides a complete MAAS installation on a single node.
+
+Usage
+-----
+
+This charm deploys a MAAS region and cluster controller, along with all
+of their dependencies. It provides a full functional MAAS deployment on
+a single node.
+
+Step by step instructions on using the charm:
+
+    juju deploy --config config.yaml maas-single-system
+
+Configuration
+-------------
+
+Example configuration file follows:
+  maas-single-system:
+    default-url-iface: br0
+    username: admin
+    password: admin
+    email: admin@admin.com
+    source_key_url: http://keyserver.ubuntu.com:11371/pks/lookup?op=get&search=0x5CFF1EA993EE8CC5
+    source: ppa:maas-maintainers/experimental
+    cluster_management: "2"
+    cluster_nic: br0 
+    cluster_dns_zone: maas.test
+    ip_range_high: 192.168.0.254
+    ip_range_low: 192.168.0.200
+    broadcast_ip: 192.168.0.255
+    router_ip: 192.168.0.1
+    subnet_mask: 255.255.255.0
